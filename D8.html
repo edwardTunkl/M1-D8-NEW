@@ -8,24 +8,26 @@
       const changeTitle = function () {
         document.querySelector("h1").innerText = "New Title"
       };
-      changeTitle()
+      
 
       /* EXERCISE 2
       Write a function for changing the class of the title of the page in "myHeading".
       */
 
       const addClassToTitle = function () {
-      document.querySelector("h1").classList.add("title")
+        let newClass = document.querySelector("h1");
+           newClass.classList.add("myHeading");
+
+      // document.querySelector("h1").classList.add("myHeading")
       };
-      addClassToTitle()
+      
 
       /* EXERCISE 3
       Write a function for changing the text of only the p which are children of a div.
       */
 
       const changePcontent = function () {
-      let changeText =document
-
+      document.querySelector("div > p").innerText = "Text of child"
       };
 
       /* EXERCISE 4
@@ -33,15 +35,16 @@
       */
 
       const changeUrls = function () {
-        //
+       document.querySelector("a").innerHTML = "https://www.google.com"
       };
-
+      
       /* EXERCISE 5
        Write a function for adding a new item in the second list.
        */
 
       const addToTheSecond = function (content) {
-        //
+      
+        
       };
 
       /* EXERCISE 6
@@ -113,7 +116,7 @@
  
   <body>
     <header>
-      <h1> Page</h1>
+      <h1> Title of page</h1>
       <h2>This is the subtitle of the page</h2>
     </header>
    
